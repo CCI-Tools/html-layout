@@ -34,7 +34,7 @@
 }
 
 .center {
-    background-color: antiquewhite;
+    background-color: deeppink;
     display: inline-block;
     width: calc(100% - 100px - 150px);
     height: 100%;
@@ -44,7 +44,6 @@
 .right {
     background-color: green;
     float: right;
-    display: inline;
     width: 150px;
     height: 100%;
     overflow: hidden;
