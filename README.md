@@ -1,12 +1,14 @@
 ## Browser Layout Process
 
-The layout usually has the following pattern:
+The layout process performed by browsers usually has the following pattern:
 
-1. Parent renderer determines its own width.
-2. Parent goes over children and:
-   1. Place the child renderer (sets its x and y).
-   2. Calls child layout if needed(they are dirty or we are in a global layout or some other reason) - this calculates the child's height.
-   3. Parent uses children accumulative heights and the heights of the margins and paddings to set it own height - this will be used by the parent renderer's parent.
+1. Parent element renderer determines its own width.
+2. Parent element goes over children and:
+   1. Place the child element renderer (sets its x and y).
+   2. Calls child layout if needed(they are dirty or we are in a global layout or some other reason) - 
+      this calculates the child's height.
+   3. Parent uses children accumulative heights and the heights of the margins and paddings to set it own height - 
+      this will be used by the parent renderer's parent.
 3. Sets its dirty bit to false.
 
 The renderer's width is calculated using the container block's width , the renderer's style "width" property, the margins and borders. 
@@ -37,14 +39,15 @@ Now the minimum and maximum widths will be calculated.
 * [with calc()]()
 * [with flex]()
 
-## References
+## HTML/CSS Must-Reads
 
 * [How browsers work - Layout](http://taligarsiel.com/Projects/howbrowserswork1.htm#Layout)
-* [Determining the dimensions of elements](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
-* [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [MDN: Cascade and Inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
+* [MDN: CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [MDN: Determining the Dimensions of Elements](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements)
 * [CSS Default Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
 
-## CSS Layout Attributes
+## Important CSS Layout Attributes
 
 * [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display?v=example)
 * [overflow](https://developer.mozilla.org/en/docs/Web/CSS/overflow?v=example)
