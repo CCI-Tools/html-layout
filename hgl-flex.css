@@ -1,0 +1,55 @@
+.root {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: blue;
+    flex: none;
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: red;
+    flex: none;
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+}
+
+.mid-section {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 3em - 2em);
+    overflow: hidden;
+    display: flex;
+}
+
+.left {
+    background-color: yellow;
+    flex: none;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.center {
+    background-color: antiquewhite;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right {
+    background-color: green;
+    flex: none;
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+}
